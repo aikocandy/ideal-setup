@@ -1,0 +1,19 @@
+# WARN[0000] ~~ the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+# version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: aikoc
+      MYSQL_DATABASE: playground
+      MYSQL_USER: aikoc
+      MYSQL_PASSWORD: aikoc
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
