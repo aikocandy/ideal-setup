@@ -1,4 +1,5 @@
 // 이메일을 찾기 위한 라벨 이름을 지정합니다.
+// Gmail 필터를 통해 삭제하고자 하는 패턴의 메일이 아래의 라벨로 자동으로 분류되도록 하는 작업이 선행되어야 합니다.
 const LABEL_NAME = 'mocaverse passwordless';
 
 function moveEmailsToTrash() {
